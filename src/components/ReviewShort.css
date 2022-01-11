@@ -1,0 +1,26 @@
+.reviewShortDiv {
+  margin: 20px auto;
+  color: #c7d5e0;
+  background-color: #171a21;
+  padding: 10px;
+  width: 100%;
+}
+.reviewShortDiv h2 {
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+}
+.gameTitle {
+  margin-bottom: 20px;
+  color: red;
+}
+.reviewShortDiv button {
+  width: 50%;
+  padding: 6px;
+  background-color: #2a475e;
+  color: #66c0f4;
+}
+button:hover,
+input[type="submit"] {
+  cursor: pointer;
+}

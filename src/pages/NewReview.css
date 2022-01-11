@@ -1,0 +1,36 @@
+#newReviewSection {
+  margin: 20px auto;
+  color: #c7d5e0;
+  background-color: #171a21;
+  padding: 10px 10px 150px 10px;
+}
+#newReviewSection h2 {
+  text-align: center;
+}
+#addReviewForm {
+  display: grid;
+  gap: 5px;
+  max-width: 400px;
+  margin: auto;
+}
+#addReviewForm input,
+#addReviewForm textarea {
+  margin-bottom: 10px;
+}
+input[type="number"],
+textarea {
+  border-color: #2a475e;
+  background-color: #121b31;
+  color: #c7d5e0;
+}
+#addReviewForm textarea {
+  resize: vertical;
+  padding: 6px;
+}
+#addReviewForm input[type="submit"] {
+  padding: 20px;
+}
+a:hover,
+input[type="submit"] {
+  cursor: pointer;
+}

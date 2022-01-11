@@ -1,0 +1,10 @@
+img {
+  width: 100%;
+}
+
+@media all and (max-width: 700px) {
+  #LogoDiv {
+    max-width: 300px;
+    margin: auto;
+  }
+}

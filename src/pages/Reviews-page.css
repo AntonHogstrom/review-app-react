@@ -1,0 +1,95 @@
+.reviewSection {
+  padding-bottom: 150px;
+}
+
+#form {
+  background-color: #2a475e;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 15px 2px;
+  padding: 10px;
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+form input {
+  padding: 6px;
+}
+input[type="submit"] {
+  background-color: #121b31;
+  color: #c7d5e0;
+}
+input[type="text"] {
+  border-color: #2a475e;
+  background-color: #121b31;
+  color: #c7d5e0;
+}
+#showAll {
+  grid-column: 1/3;
+}
+
+#reviewSection {
+  margin: auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+#h1Div {
+  grid-column: 1/3;
+  color: #c7d5e0;
+  text-align: center;
+  text-decoration: underline 4px;
+  text-underline-offset: 10px;
+}
+
+#paginationDiv {
+  grid-column: 1/3;
+  padding: 50px;
+  margin: auto;
+  width: 100%;
+}
+#nextPrevDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+#prev,
+#next {
+  padding: 6px;
+  width: 100px;
+  color: #c7d5e0;
+  background-color: #121b31;
+}
+#prev {
+  margin-left: auto;
+}
+#next {
+  margin-right: auto;
+}
+#paginationNumberDiv {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#paginationNumberDiv ul {
+  background-color: #121b31;
+  padding: 10px 20px;
+}
+#paginationNumberDiv ul li {
+  display: inline-block;
+}
+#paginationNumberDiv ul li button {
+  padding: 6px;
+  margin: 3px;
+  color: #c7d5e0;
+  background-color: #2a475e;
+}
+
+@media all and (max-width: 500px) {
+  #reviewSection {
+    display: block;
+    margin: 20px;
+  }
+}

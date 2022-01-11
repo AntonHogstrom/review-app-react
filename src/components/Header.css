@@ -1,0 +1,10 @@
+header {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: flex-start;
+}
+@media all and (max-width: 700px) {
+  header {
+    display: block;
+  }
+}
