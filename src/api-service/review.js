@@ -1,16 +1,22 @@
 import axios from "axios";
 
 //API url and headers
-
-const api = axios.create({
-  baseURL: "http://localhost:8000/api/reviews",
-  headers: {
-    "Content-Type": "application/json",
-  },
-});
+let api;
 // eslint-disable-next-line no-restricted-globals
 if (location.hostname === "localhost") {
-  api.baseURL = "https://review-app-api.herokuapp.com/api/reviews";
+  api = axios.create({
+    baseURL: "http://localhost:8000/api/reviews",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+} else {
+  api = axios.create({
+    baseURL: "https://review-app-api.herokuapp.com/api/reviews",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
 }
 
 // class for handling review API requests
