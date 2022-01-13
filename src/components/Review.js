@@ -18,7 +18,7 @@ const ReviewComponent = (props) => {
       <button
         onClick={() => {
           props.deleteReview();
-          navigate("/reviews");
+          navigate("/reviews?page=0");
         }}
       >
         Delete

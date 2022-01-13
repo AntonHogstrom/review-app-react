@@ -22,9 +22,9 @@ const Review = (props) => {
       });
   }, [reviewIdPara]);
 
-  const deleteReview = (e) => {
+  const deleteReview = async (e) => {
     //delete review with id from url
-    reviewApiService
+    await reviewApiService
       .delete("?id=" + reviewIdPara)
       .then((Response) => {
         console.log(Response.data);
