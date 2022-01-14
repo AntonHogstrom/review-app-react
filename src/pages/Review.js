@@ -2,6 +2,7 @@ import ReviewComponent from "../components/Review";
 import reviewApiService from "../api-service/review.js";
 import { useSearchParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Review = (props) => {
   const [searchParams] = useSearchParams();
@@ -22,12 +23,15 @@ const Review = (props) => {
       });
   }, [reviewIdPara]);
 
+  const navigate = useNavigate();
+
   const deleteReview = async (e) => {
     //delete review with id from url
     await reviewApiService
       .delete("?id=" + reviewIdPara)
       .then((Response) => {
         console.log(Response.data);
+        navigate("/reviews");
       })
       .catch((Err) => {
         console.log(Err);

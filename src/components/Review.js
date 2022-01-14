@@ -1,10 +1,8 @@
-import { useNavigate } from "react-router-dom";
 import "./Review.css";
 
 //review component for displaying a single review
 //taking props from outside of component
 const ReviewComponent = (props) => {
-  const navigate = useNavigate();
 
   return (
     <section id="review">
@@ -18,7 +16,6 @@ const ReviewComponent = (props) => {
       <button
         onClick={() => {
           props.deleteReview();
-          navigate("/reviews");
         }}
       >
         Delete
