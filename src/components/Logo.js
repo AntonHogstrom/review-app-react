@@ -1,4 +1,4 @@
-import image from "../images/dog.jpg";
+import image from "../images/gamereview.png";
 import "./Logo.css";
 
 //logo component
